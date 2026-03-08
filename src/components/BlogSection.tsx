@@ -20,7 +20,7 @@ const blogPosts = [
     title: "Kubernetes 101: Pods, Services & Deployments",
     description: "Breaking down core Kubernetes concepts with practical examples to help you start your container orchestration journey.",
     tags: ["Kubernetes", "K8s", "Orchestration"],
-    url: "https://medium.com/@yourusername",
+    url: "https://medium.com/@ajinkyavdesai007",
     date: "2024",
   },
   {
