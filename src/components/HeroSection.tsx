@@ -50,16 +50,6 @@ const HeroSection = () => {
           <span className="text-gradient">Engineer</span>
         </motion.h1>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.35 }}
-          className="inline-block mb-6"
-        >
-          <span className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary font-mono text-sm">
-            🎓 Fresher — Currently Training
-          </span>
-        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
