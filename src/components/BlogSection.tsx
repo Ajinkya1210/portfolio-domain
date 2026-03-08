@@ -27,7 +27,7 @@ const blogPosts = [
     title: "Terraform: Infrastructure as Code Made Simple",
     description: "How to provision and manage cloud resources using Terraform with real-world AWS examples.",
     tags: ["Terraform", "IaC", "AWS"],
-    url: "https://medium.com/@yourusername",
+    url: "https://medium.com/@ajinkyavdesai007",
     date: "2024",
   },
 ];
