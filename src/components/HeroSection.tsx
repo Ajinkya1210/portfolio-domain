@@ -33,12 +33,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mb-6"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary font-mono text-sm text-muted-foreground mb-8">
-            <Terminal className="w-4 h-4 text-primary" />
-            <span>~/portfolio</span>
-            <span className="text-primary">$</span>
-            <span>Ajinkya Desai</span>
-          </div>
+          <span className="font-mono text-lg text-primary mb-8">Ajinkya Desai</span>
         </motion.div>
 
         <motion.h1
