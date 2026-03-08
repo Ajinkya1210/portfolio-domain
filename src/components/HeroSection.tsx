@@ -16,12 +16,14 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          <div className="w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full border-2 border-primary/40 glow-primary overflow-hidden bg-secondary">
-            <img
-              src={profileImg}
-              alt="Profile"
-              className="w-full h-full object-cover"
-            />
+          <div className="w-40 h-40 md:w-52 md:h-52 mx-auto rounded-full border-2 border-primary/30 glow-primary overflow-hidden bg-card p-1">
+            <div className="w-full h-full rounded-full overflow-hidden bg-secondary flex items-center justify-center">
+              <img
+                src={profileImg}
+                alt="Profile"
+                className="w-[90%] h-[90%] object-contain"
+              />
+            </div>
           </div>
         </motion.div>
 
