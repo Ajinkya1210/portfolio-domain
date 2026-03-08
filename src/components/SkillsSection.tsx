@@ -7,7 +7,7 @@ const skills = [
   { icon: GitBranch, name: "CI/CD", items: ["Jenkins", "GitHub Actions", "GitLab CI"] },
   { icon: Terminal, name: "IaC", items: ["Terraform", "Ansible", "Pulumi"] },
   { icon: Server, name: "Monitoring", items: ["Prometheus", "Grafana", "ELK Stack"] },
-  { icon: Shield, name: "Security", items: ["Vault", "Trivy", "SOPS"] },
+  
 ];
 
 const SkillsSection = () => {
