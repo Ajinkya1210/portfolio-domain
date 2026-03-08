@@ -6,28 +6,28 @@ const blogPosts = [
     title: "Getting Started with Docker for Beginners",
     description: "A comprehensive guide to understanding containers, images, and Docker fundamentals for newcomers to DevOps.",
     tags: ["Docker", "Containers", "Beginner"],
-    url: "https://medium.com/@yourusername",
+    url: "https://medium.com/@ajinkyavdesai007",
     date: "2024",
   },
   {
     title: "CI/CD Pipeline with GitHub Actions",
     description: "Step-by-step tutorial on building your first CI/CD pipeline using GitHub Actions for automated testing and deployment.",
     tags: ["CI/CD", "GitHub Actions", "Automation"],
-    url: "https://medium.com/@yourusername",
+    url: "https://medium.com/@ajinkyavdesai007",
     date: "2024",
   },
   {
     title: "Kubernetes 101: Pods, Services & Deployments",
     description: "Breaking down core Kubernetes concepts with practical examples to help you start your container orchestration journey.",
     tags: ["Kubernetes", "K8s", "Orchestration"],
-    url: "https://medium.com/@yourusername",
+    url: "https://medium.com/@ajinkyavdesai007",
     date: "2024",
   },
   {
     title: "Terraform: Infrastructure as Code Made Simple",
     description: "How to provision and manage cloud resources using Terraform with real-world AWS examples.",
     tags: ["Terraform", "IaC", "AWS"],
-    url: "https://medium.com/@yourusername",
+    url: "https://medium.com/@ajinkyavdesai007",
     date: "2024",
   },
 ];
@@ -47,7 +47,7 @@ const BlogSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold font-display">Latest Articles</h2>
           </div>
           <a
-            href="https://medium.com/@yourusername"
+            href="https://medium.com/@ajinkyavdesai007"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-mono text-primary hover:underline"
