@@ -1,18 +1,40 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Twitter, Send } from "lucide-react";
+import { Mail, Github, Linkedin, Twitter, Send, Loader2, CheckCircle } from "lucide-react";
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [loading, setLoading] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+    setError("");
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: integrate with email service
-    console.log("Form submitted:", form);
+    setLoading(true);
+    setError("");
+
+    try {
+      const { data, error: fnError } = await supabase.functions.invoke("contact-form", {
+        body: form,
+      });
+
+      if (fnError) throw fnError;
+      if (data?.error) throw new Error(data.error);
+
+      setSent(true);
+      setForm({ name: "", email: "", subject: "", message: "" });
+      setTimeout(() => setSent(false), 5000);
+    } catch (err: any) {
+      setError(err.message || "Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -71,12 +93,24 @@ const ContactSection = () => {
               rows={5}
               className="w-full px-5 py-4 rounded-xl bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all resize-y"
             />
+
+            {error && (
+              <p className="text-sm text-destructive font-mono">{error}</p>
+            )}
+
             <button
               type="submit"
-              className="w-full sm:w-auto px-10 py-4 rounded-xl bg-primary text-primary-foreground font-bold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity glow-primary flex items-center justify-center gap-2 mx-auto"
+              disabled={loading}
+              className="w-full sm:w-auto px-10 py-4 rounded-xl bg-primary text-primary-foreground font-bold text-sm uppercase tracking-wider hover:opacity-90 transition-opacity glow-primary flex items-center justify-center gap-2 mx-auto disabled:opacity-50"
             >
-              <Send className="w-4 h-4" />
-              Send Message
+              {loading ? (
+                <Loader2 className="w-4 h-4 animate-spin" />
+              ) : sent ? (
+                <CheckCircle className="w-4 h-4" />
+              ) : (
+                <Send className="w-4 h-4" />
+              )}
+              {loading ? "Sending..." : sent ? "Sent!" : "Send Message"}
             </button>
           </form>
 
