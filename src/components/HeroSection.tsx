@@ -37,7 +37,7 @@ const HeroSection = () => {
             <Terminal className="w-4 h-4 text-primary" />
             <span>~/portfolio</span>
             <span className="text-primary">$</span>
-            <span>whoami</span>
+            <span>Ajinkya Desai</span>
           </div>
         </motion.div>
 
@@ -47,9 +47,9 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="text-5xl md:text-7xl font-bold font-display tracking-tight mb-6"
         >
-          Hi, I'm <span className="text-gradient">Ajinkya Desai</span>
+          I'm a <span className="text-gradient">DevOps</span>
           <br />
-          a <span className="text-gradient">DevOps Engineer</span>
+          <span className="text-gradient">Engineer</span>
         </motion.h1>
 
 
