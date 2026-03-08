@@ -37,7 +37,7 @@ const HeroSection = () => {
             <Terminal className="w-4 h-4 text-primary" />
             <span>~/portfolio</span>
             <span className="text-primary">$</span>
-            <span>whoami</span>
+            <span>Ajinkya Desai</span>
           </div>
         </motion.div>
 
