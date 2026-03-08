@@ -45,8 +45,6 @@ const HeroSection = () => {
           <span className="text-primary">DevOps Engineer</span>
           <span className="text-muted-foreground">|</span>
           <span className="text-primary">Cloud Engineer</span>
-          <span className="text-muted-foreground">|</span>
-          <span className="text-primary">Freelancer</span>
         </motion.div>
 
 
