@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Terminal, ChevronDown } from "lucide-react";
+import profileImg from "@/assets/profile-placeholder.png";
 
 const HeroSection = () => {
   return (
@@ -10,9 +11,24 @@ const HeroSection = () => {
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="mb-8"
+        >
+          <div className="w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full border-2 border-primary/40 glow-primary overflow-hidden bg-secondary">
+            <img
+              src={profileImg}
+              alt="Profile"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="mb-6"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary font-mono text-sm text-muted-foreground mb-8">
@@ -26,28 +42,39 @@ const HeroSection = () => {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
           className="text-5xl md:text-7xl font-bold font-display tracking-tight mb-6"
         >
-          Hi, I'm <span className="text-gradient">DevOps</span>
+          Hi, I'm a <span className="text-gradient">DevOps</span>
           <br />
           <span className="text-gradient">Engineer</span>
         </motion.h1>
 
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.35 }}
+          className="inline-block mb-6"
+        >
+          <span className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary font-mono text-sm">
+            🎓 Fresher — Currently Training
+          </span>
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.45 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          I build, automate, and scale cloud infrastructure. Passionate about CI/CD pipelines, 
-          container orchestration, and making deployments boring (in a good way).
+          Aspiring DevOps Engineer passionate about CI/CD pipelines, 
+          container orchestration, cloud infrastructure, and automation.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.45 }}
+          transition={{ duration: 0.6, delay: 0.55 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
