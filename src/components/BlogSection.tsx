@@ -13,7 +13,7 @@ const blogPosts = [
     title: "CI/CD Pipeline with GitHub Actions",
     description: "Step-by-step tutorial on building your first CI/CD pipeline using GitHub Actions for automated testing and deployment.",
     tags: ["CI/CD", "GitHub Actions", "Automation"],
-    url: "https://medium.com/@yourusername",
+    url: "https://medium.com/@ajinkyavdesai007",
     date: "2024",
   },
   {
