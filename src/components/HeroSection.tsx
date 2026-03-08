@@ -49,7 +49,7 @@ const HeroSection = () => {
         >
           Hi, I'm <span className="text-gradient">Ajinkya Desai</span>
           <br />
-          <span className="text-gradient">Engineer</span>
+          a <span className="text-gradient">DevOps Engineer</span>
         </motion.h1>
 
 
