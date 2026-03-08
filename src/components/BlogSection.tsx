@@ -6,7 +6,7 @@ const blogPosts = [
     title: "Getting Started with Docker for Beginners",
     description: "A comprehensive guide to understanding containers, images, and Docker fundamentals for newcomers to DevOps.",
     tags: ["Docker", "Containers", "Beginner"],
-    url: "https://medium.com/@yourusername",
+    url: "https://medium.com/@ajinkyavdesai007",
     date: "2024",
   },
   {
