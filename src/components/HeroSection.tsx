@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Terminal, ChevronDown } from "lucide-react";
-import profileImg from "@/assets/profile-placeholder.png";
+import profileImg from "@/assets/profile-photo.jpeg";
 
 const HeroSection = () => {
   return (
