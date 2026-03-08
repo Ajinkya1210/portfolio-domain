@@ -27,25 +27,27 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="mb-6"
-        >
-          <span className="font-mono text-lg text-primary mb-8">Ajinkya Desai</span>
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.25 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="text-5xl md:text-7xl font-bold font-display tracking-tight mb-6"
         >
-          I'm a <span className="text-gradient">DevOps</span>
-          <br />
-          <span className="text-gradient">Engineer</span>
+          Ajinkya Desai
         </motion.h1>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.25 }}
+          className="flex items-center justify-center gap-3 text-lg md:text-xl font-mono mb-10"
+        >
+          <span className="text-primary">DevOps Engineer</span>
+          <span className="text-muted-foreground">|</span>
+          <span className="text-primary">Cloud Engineer</span>
+          <span className="text-muted-foreground">|</span>
+          <span className="text-primary">Freelancer</span>
+        </motion.div>
 
 
         <motion.p
