@@ -47,7 +47,7 @@ const BlogSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold font-display">Latest Articles</h2>
           </div>
           <a
-            href="https://medium.com/@yourusername"
+            href="https://medium.com/@ajinkyavdesai007"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-mono text-primary hover:underline"
