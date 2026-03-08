@@ -5,6 +5,8 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version',
 };
 
+const NOTIFICATION_EMAIL = "ajinkyavdesai007@gmail.com";
+
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
     return new Response(null, { headers: corsHeaders });
@@ -41,6 +43,44 @@ serve(async (req) => {
         JSON.stringify({ error: "Failed to save submission" }),
         { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
+    }
+
+    // Send email notification via Resend
+    const resendApiKey = Deno.env.get("RESEND_API_KEY");
+    if (resendApiKey) {
+      try {
+        const emailRes = await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${resendApiKey}`,
+          },
+          body: JSON.stringify({
+            from: "Portfolio Contact <onboarding@resend.dev>",
+            to: [NOTIFICATION_EMAIL],
+            subject: `New Contact Form: ${subject}`,
+            html: `
+              <h2>New Contact Form Submission</h2>
+              <p><strong>Name:</strong> ${name}</p>
+              <p><strong>Email:</strong> ${email}</p>
+              <p><strong>Subject:</strong> ${subject}</p>
+              <p><strong>Message:</strong></p>
+              <p>${message}</p>
+            `,
+          }),
+        });
+
+        if (!emailRes.ok) {
+          const emailErr = await emailRes.text();
+          console.error("Resend email error:", emailErr);
+        } else {
+          console.log("Notification email sent successfully");
+        }
+      } catch (emailError) {
+        console.error("Failed to send email notification:", emailError);
+      }
+    } else {
+      console.warn("RESEND_API_KEY not configured, skipping email notification");
     }
 
     return new Response(
