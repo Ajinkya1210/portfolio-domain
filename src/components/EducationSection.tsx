@@ -14,6 +14,12 @@ const educationData = [
     period: "2018 – 2020",
     description: "Science stream with focus on Mathematics and Computer Science.",
   },
+  {
+    degree: "Secondary School (10th)",
+    institution: "Your School Name",
+    period: "2017 – 2018",
+    description: "Completed secondary education with strong foundation in Science and Mathematics.",
+  },
 ];
 
 const EducationSection = () => {
