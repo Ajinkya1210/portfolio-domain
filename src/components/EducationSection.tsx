@@ -37,7 +37,7 @@ const EducationSection = () => {
         </motion.div>
 
         <div className="relative">
-          <div className="absolute left-[19px] top-2 bottom-2 w-px bg-border" />
+          <div className="absolute left-[19px] top-6 bottom-8 w-px bg-border" />
 
           <div className="space-y-12">
             {educationData.map((edu, i) => (
