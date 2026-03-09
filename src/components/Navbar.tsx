@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 font-mono font-semibold text-primary">
           <Terminal className="w-5 h-5" />
-          <span>devops.portfolio</span>
+          <span>Ajinkya</span>
         </a>
 
         {/* Desktop */}
