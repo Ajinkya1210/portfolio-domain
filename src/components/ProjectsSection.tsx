@@ -3,30 +3,30 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "K8s Auto-Scaler",
-    description: "Custom Kubernetes autoscaler with predictive scaling based on historical metrics, reducing cloud costs by 35%.",
-    tags: ["Kubernetes", "Go", "Prometheus"],
+    title: "End-to-End Automated Cloud Voting System: Jenkins CI/CD on AWS EKS & RDS",
+    description: "A fully automated CI/CD pipeline that builds and deploys a Node.js microservice into an Amazon EKS cluster with a load-balanced frontend. The system ensures high availability and data persistence by integrating stateless Kubernetes pods with a private Amazon RDS (MySQL) instance, secured via custom VPC Security Groups and IAM Access Entries.",
+    tags: ["Kubernetes", "Docker", "CI/CD", "AWS","RDS","GitHub","VPC"],
     github: "#",
     live: "#",
   },
   {
-    title: "CI/CD Pipeline Framework",
-    description: "Reusable, modular CI/CD pipeline templates for multi-language monorepos with automated security scanning.",
-    tags: ["GitHub Actions", "Docker", "Trivy"],
+    title: "End-to-End Automated Cloud Registration System: A Jenkins-Docker-AWS Pipeline",
+    description: "Automated CI/CD pipeline using Jenkins and Docker to deploy a containerized Node.js application. Provisions secure AWS RDS infrastructure via Terraform with encrypted database connectivity.",
+    tags: ["CI/CD", "Docker", "Terraform", "AWS", "RDS","GitHub","VPC"],
     github: "#",
     live: "#",
   },
   {
-    title: "Infrastructure as Code Suite",
-    description: "Complete AWS infrastructure provisioning with Terraform modules, including VPC, EKS, RDS, and monitoring stack.",
-    tags: ["Terraform", "AWS", "Ansible"],
+    title: "Cloud Cart CI/CD Deployment using Jenkins & Docker on AWS",
+    description: "Developed and deployed a containerized full-stack web application on AWS EC2 using Docker. Implemented a CI/CD pipeline with Jenkins integrated with GitHub to automate build and deployment processes. The application uses a Node.js backend with REST APIs and a responsive frontend, demonstrating end-to-end DevOps practices including automation, containerization, and cloud deployment.",
+    tags: ["CI/CD", "AWS", "EC2", "Docker", "Jenkins","GitHub","linux"],
     github: "#",
     live: "#",
   },
   {
-    title: "GitOps Dashboard",
-    description: "Real-time dashboard for monitoring ArgoCD deployments, Flux reconciliations, and cluster health across environments.",
-    tags: ["React", "ArgoCD", "Grafana"],
+    title: "Book-App-CI/CD",
+    description: "This document outlines the complete setup and deployment process for a Book App Node.js application using AWS EC2, Jenkins, and GitHub.",
+    tags: ["Jenkins", "AWS", "EC2", "Node.js", "GitHub","linux"],
     github: "#",
     live: "#",
   },
@@ -42,7 +42,7 @@ const ProjectsSection = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <p className="font-mono text-primary text-sm mb-2">{"// projects"}</p>
+          {/* <p className="font-mono text-primary text-sm mb-2">{"// projects"}</p> */}
           <h2 className="text-3xl md:text-4xl font-bold font-display">Featured Work</h2>
         </motion.div>
 

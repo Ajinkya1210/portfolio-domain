@@ -3,32 +3,32 @@ import { ExternalLink, BookOpen } from "lucide-react";
 
 const blogPosts = [
   {
-    title: "Getting Started with Docker for Beginners",
-    description: "A comprehensive guide to understanding containers, images, and Docker fundamentals for newcomers to DevOps.",
-    tags: ["Docker", "Containers", "Beginner"],
-    url: "https://medium.com/@ajinkyavdesai007",
-    date: "2024",
+    title: "Understanding AWS Lambda",
+    description: "AWS Lambda is a service that lets you run your code without managing any servers. You don’t have to worry about creating or maintaining a machine.",
+    tags: ["AWS", "Lambda", "Beginner"],
+    url: "https://medium.com/@ajinkyavdesai007/day-51-understanding-aws-lambda-3ce9c74216cf",
+    date: "2025",
   },
   {
-    title: "CI/CD Pipeline with GitHub Actions",
-    description: "Step-by-step tutorial on building your first CI/CD pipeline using GitHub Actions for automated testing and deployment.",
-    tags: ["CI/CD", "GitHub Actions", "Automation"],
-    url: "https://medium.com/@ajinkyavdesai007",
-    date: "2024",
+    title: "AWS RDS (Relational Database Service)",
+    description: "AWS RDS (Amazon Relational Database Service) is a cloud service that helps you create and manage databases easily. You don’t need to install software, manage servers, or worry about backups.",
+    tags: ["AWS", "RDS", "Database"],
+    url: "https://medium.com/@ajinkyavdesai007/day-36-aws-rds-relational-database-service-73d4710d19a9",
+    date: "2025",
   },
   {
-    title: "Kubernetes 101: Pods, Services & Deployments",
-    description: "Breaking down core Kubernetes concepts with practical examples to help you start your container orchestration journey.",
-    tags: ["Kubernetes", "K8s", "Orchestration"],
-    url: "https://medium.com/@ajinkyavdesai007",
-    date: "2024",
+    title: "AWS VPC (Virtual Private Cloud)",
+    description: "AWS Virtual Private Cloud (VPC) is a service that lets you create a private and secure network in the AWS cloud. It allows you to control how your resources connect to each other and to the internet.",
+    tags: ["AWS", "VPC", "NACl"],
+    url: "https://medium.com/@ajinkyavdesai007/day-28-aws-vpc-virtual-private-cloud-d0ed92af99f8",
+    date: "2025",
   },
   {
-    title: "Terraform: Infrastructure as Code Made Simple",
-    description: "How to provision and manage cloud resources using Terraform with real-world AWS examples.",
-    tags: ["Terraform", "IaC", "AWS"],
-    url: "https://medium.com/@ajinkyavdesai007",
-    date: "2024",
+    title: "AWS IAM → Roles & Policies",
+    description: "In the last blog, we learned about IAM Users and Groups. Now we will move to the next two parts of IAM: Roles and Policies. These two things help you control access in an easy and safe way.",
+    tags: ["AWS", "IAM", "Roles" ,"Policies"],
+    url: "https://medium.com/@ajinkyavdesai007/day-42-aws-iam-roles-policies-affcdbdbd5e4",
+    date: "2025",
   },
 ];
 
@@ -43,7 +43,7 @@ const BlogSection = () => {
           className="mb-16 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4"
         >
           <div>
-            <p className="font-mono text-primary text-sm mb-2">{"// blog"}</p>
+            {/* <p className="font-mono text-primary text-sm mb-2">{"// blog"}</p> */}
             <h2 className="text-3xl md:text-4xl font-bold font-display">Latest Articles</h2>
           </div>
           <a

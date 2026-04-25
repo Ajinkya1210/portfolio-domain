@@ -3,22 +3,22 @@ import { GraduationCap, School } from "lucide-react";
 
 const educationData = [
   {
-    degree: "Your Degree (e.g., B.Tech in Computer Science)",
-    institution: "Your College / University Name",
-    period: "2020 – 2024",
-    description: "Relevant coursework: Operating Systems, Computer Networks, Cloud Computing, Linux Administration.",
+    degree: "B.Tech in Computer Science and Engineering",
+    institution: "Tatyasaheb Kore Institute of Engineering and Technology, Warananagar",
+    period: "2021 – 2025",
+    description: "Class 'A'",
   },
   {
     degree: "Higher Secondary (12th)",
-    institution: "Your School Name",
-    period: "2018 – 2020",
-    description: "Science stream with focus on Mathematics and Computer Science.",
+    institution: "chate Junior College, Karad",
+    period: "2020 – 2021",
+    description: "Class 'A+'",
   },
   {
     degree: "Secondary School (10th)",
-    institution: "Your School Name",
-    period: "2017 – 2018",
-    description: "Completed secondary education with strong foundation in Science and Mathematics.",
+    institution: "Chhatrapati sambhaji Vidyalaya, shivnagar",
+    period: "2018 – 2019",
+    description: "Class 'A+'",
   },
 ];
 
@@ -32,7 +32,7 @@ const EducationSection = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <p className="font-mono text-primary text-sm mb-2">{"// education"}</p>
+          {/* <p className="font-mono text-primary text-sm mb-2">{"// education"}</p> */}
           <h2 className="text-3xl md:text-4xl font-bold font-display">Education</h2>
         </motion.div>
 

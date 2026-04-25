@@ -45,7 +45,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="font-mono text-primary text-sm mb-2">{"// contact"}</p>
+          {/* <p className="font-mono text-primary text-sm mb-2">{"// contact"}</p> */}
           <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-center">Let's Connect</h2>
           <p className="text-muted-foreground mb-10 text-center leading-relaxed">
             I'm always open to discussing new opportunities, interesting projects,

@@ -20,7 +20,7 @@ const SkillsSection = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <p className="font-mono text-primary text-sm mb-2">{"// skills"}</p>
+          {/* <p className="font-mono text-primary text-sm mb-2">{"// skills"}</p> */}
           <h2 className="text-3xl md:text-4xl font-bold font-display">Tech Stack</h2>
         </motion.div>
 

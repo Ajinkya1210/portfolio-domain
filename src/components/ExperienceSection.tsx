@@ -3,13 +3,15 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: "Your Role / Training Title",
-    company: "Company / Institute Name",
-    period: "2024 – Present",
+    role: "DevOps Intern",
+    company: "Cravita Technologies",
+    period: "July 2025 – March 2026",
     points: [
-      "Describe what you're learning or working on",
-      "Add key responsibilities or skills gained",
-      "Mention tools and technologies used",
+      "Worked on setting up CI/CD pipelines using GitHuband Jenkins for automated build and deployment.",
+      "Containerized applications using Docker and managed multi-container setups.",
+      "Deployed applications on AWS EC2 and configured services like S3, IAM, and VPC.",
+      "Implemented Infrastructure as Code (IaC) using Terraform for provisioning cloud resources.",
+      "Managed container orchestration using Kubernetes (basic deployments, pods, services).",
     ],
   },
 ];
@@ -24,7 +26,7 @@ const ExperienceSection = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <p className="font-mono text-primary text-sm mb-2">{"// experience"}</p>
+          {/* <p className="font-mono text-primary text-sm mb-2">{"// experience"}</p> */}
           <h2 className="text-3xl md:text-4xl font-bold font-display">Experience</h2>
         </motion.div>
 

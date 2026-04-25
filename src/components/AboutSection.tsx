@@ -11,7 +11,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <p className="font-mono text-primary text-sm mb-2">{"// about"}</p>
+          {/* //<p className="font-mono text-primary text-sm mb-2">{"// about"}</p> */}
           <h2 className="text-3xl md:text-4xl font-bold font-display">About Me</h2>
         </motion.div>
 
