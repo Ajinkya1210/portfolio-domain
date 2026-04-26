@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Twitter, Send, Loader2, CheckCircle } from "lucide-react";
+import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
+import {MdEmail } from "react-icons/md";
+import { Loader2, CheckCircle, Send } from "lucide-react";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -116,10 +118,11 @@ const ContactSection = () => {
 
           <div className="flex items-center justify-center gap-6">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Twitter, href: "#", label: "Twitter" },
-              { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+              { icon: FaGithub, href: "https://github.com/Ajinkya1210", label: "GitHub" },
+              { icon: FaLinkedin, href: "https://www.linkedin.com/in/ajinkkya-desai-0698b1248/", label: "LinkedIn" },
+              { icon: FaTwitter, href: "#", label: "Twitter" },
+              { icon: MdEmail, href: "mailto:hello@example.com", label: "Email" },
+            
             ].map((social) => (
               <a
                 key={social.label}

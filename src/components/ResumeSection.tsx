@@ -10,14 +10,14 @@ const ResumeSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <p className="font-mono text-primary text-sm mb-2">{"// resume"}</p>
+          {/* <p className="font-mono text-primary text-sm mb-2">{"// resume"}</p> */}
           <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">Download Resume</h2>
           <p className="text-muted-foreground mb-10 leading-relaxed">
             Get a copy of my latest resume to learn more about my skills, experience, and qualifications.
           </p>
 
           <motion.a
-            href="/Ajinkya_Desai_Resume.pdf"
+            href="Ajinkya_Desai_9421214150.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
