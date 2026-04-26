@@ -16,28 +16,22 @@ const ContactSection = () => {
     setError("");
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setError("");
+  
+  const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
 
-    try {
-      const { data, error: fnError } = await supabase.functions.invoke("contact-form", {
-        body: form,
-      });
+  setSent(true);
+  setError("");
 
-      if (fnError) throw fnError;
-      if (data?.error) throw new Error(data.error);
+  setForm({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-      setSent(true);
-      setForm({ name: "", email: "", subject: "", message: "" });
-      setTimeout(() => setSent(false), 5000);
-    } catch (err: any) {
-      setError(err.message || "Something went wrong. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
+  setTimeout(() => setSent(false), 5000);
+};
 
   return (
     <section id="contact" className="py-24 px-6 bg-secondary/30">

@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
-import { Server, GitBranch, Container, Cloud, Shield, Terminal } from "lucide-react";
+import { Server, GitBranch, Container, Cloud, Shield, Terminal, Network } from "lucide-react";
 
 const skills = [
-  { icon: Cloud, name: "Cloud Platforms", items: ["AWS"] },
+  { icon: Cloud, name: "Cloud Platforms", items: ["AWS","Azure"] },
   { icon: Container, name: "Containers", items: ["Docker", "Kubernetes"] },
   { icon: GitBranch, name: "CI/CD", items: ["Jenkins", "GitHub Actions", "GitLab CI"] },
   { icon: Terminal, name: "IaC", items: ["Terraform", "Ansible"] },
   { icon: Server, name: "Monitoring", items: ["Prometheus", "Grafana"] },
+  { icon: Network, name: "Networking", items: ["TCP/IP", "DNS", "Load Balancing", "HTTP/HTTPS"] },
   
 ];
 
